@@ -15,7 +15,7 @@
   box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
-
+  background-color: white;
   border-radius: 7px;
 }
 .sixproduct-container {
@@ -26,4 +26,18 @@
   margin-top: 80px;
   height: 120vh;
   width: 70%;
+}
+.maincontainer {
+  margin-top: 60px;
+}
+.maincontainer > h1 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 70px;
+  text-align: center;
+}
+
+.maincontainer > p {
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  text-align: center;
 }

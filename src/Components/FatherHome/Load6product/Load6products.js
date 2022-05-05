@@ -9,18 +9,22 @@ const Load6products = () => {
       .then((data) => setFruits(data));
   }, []);
   return (
-    <div className="sixproduct-container">
-      {fruits.slice(0, 6).map((fruit) => (
-        <div className="Product-container">
-          <img src={fruit.image} alt="" />
-          <div className="product-info">
-            <h3>Name:</h3>
-            <h4>Price:</h4>
-            <p>Brand:</p>
+    <div className="maincontainer">
+      <h1>Top Trend</h1>
+      <p>Browse our website for the hottest items in the marketplace now.</p>
+      <div className="sixproduct-container">
+        {fruits.slice(0, 6).map((fruit) => (
+          <div className="Product-container">
+            <img src={fruit.image} alt="" />
+            <div className="product-info">
+              <h3>Name:{fruit.fruitname}</h3>
+              <h4>Price:{fruit.price}</h4>
+              <p>Quantity:{fruit.quantity}</p>
+            </div>
+            {/* <button className="btn">Add to Cart</button> */}
           </div>
-          {/* <button className="btn">Add to Cart</button> */}
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
