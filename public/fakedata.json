@@ -178,35 +178,6 @@
       "quantity": 369,
       "suppliername": "Vicki Jenkins",
       "description": "A small, deep colored berry which has a tender texture, a sweet delicate taste and a pleasant aroma. Peak season for raspberries is during the middle of summer, but they are available year-round in some markets as both fresh and frozen. The most common and most cultivated variety is the red Raspberry."
-    },
-   
-    {
-      "_id": "6273bd610b08fc7b8ace745d",
-      "image": "http://placehold.it/32x32",
-      "fruitname": "",
-      "price": "$191.87",
-      "quantity": 408,
-      "suppliername": "Gertrude Meyer",
-      "description": ""
-    },
-    {
-      "_id": "6273bd6116f1948e3ed38bd3",
-      "image": "http://placehold.it/32x32",
-      "fruitname": "",
-      "price": "$75.93",
-      "quantity": 208,
-      "suppliername": "Clay Wall",
-      "description": ""
-    },
-    {
-      "_id": "6273bd61093700cfc9cd4b0a",
-      "image": "http://placehold.it/32x32",
-      "fruitname": "",
-      "price": "$78.90",
-      "quantity": 401,
-      "suppliername": "Heidi Goff",
-      "description": ""
     }
-    
-
+   
   ]

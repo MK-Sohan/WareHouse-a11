@@ -1,0 +1,29 @@
+.Product-container img {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+
+  border-radius: 8px;
+}
+
+.Product-container {
+  width: 400px;
+  height: 530px;
+  box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+
+  border-radius: 7px;
+}
+.sixproduct-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-left: 300px;
+  margin-top: 80px;
+  height: 120vh;
+  width: 70%;
+}
