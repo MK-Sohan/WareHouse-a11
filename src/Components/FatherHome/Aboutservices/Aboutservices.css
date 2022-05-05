@@ -1,0 +1,45 @@
+.aboutservice-container img {
+  height: 70px;
+}
+.aboutservice-container {
+  display: flex;
+  border: 1px solid rgb(201, 198, 198);
+  justify-content: center;
+  border-radius: 8px;
+  align-items: center;
+  height: 200px;
+  width: 70%;
+  margin: 0 auto;
+}
+.free-ship {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  text-align: center;
+}
+.free-return {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  text-align: center;
+}
+.payment-secure {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  text-align: center;
+}
+.support {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  text-align: center;
+}

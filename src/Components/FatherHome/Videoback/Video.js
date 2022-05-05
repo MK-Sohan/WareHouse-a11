@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import video from "../../../images/raspberries_-_3777 (Original).mp4";
+import video from "../../../images/banner video/raspberries_-_3777 (Original).mp4";
 import "./Video.css";
 const Video = () => {
   return (
