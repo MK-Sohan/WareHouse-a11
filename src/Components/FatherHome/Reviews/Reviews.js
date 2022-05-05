@@ -9,7 +9,13 @@ const Reviews = () => {
   }, []);
   return (
     <div className="main-container">
-      <h1 className="text-center mt-5 mb-5">Testiminials</h1>
+      <h1 className="text-center mt-5 ">Testimonials</h1>
+      <div
+        style={{ height: "1px", width: "290px" }}
+        className="bg-primary mx-auto mb-5"
+      >
+        {" "}
+      </div>
       <div className="mainreview-container">
         {reviews.map((review) => (
           <div className="review-container">

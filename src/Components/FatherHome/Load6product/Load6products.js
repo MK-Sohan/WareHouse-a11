@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Allproducts from "../../Allproducts/Allproducts";
+import { FiZap } from "react-icons/fi";
 import "./Load6product.css";
+import HooksProducts from "../../Hooks/HooksProducts";
 const Load6products = () => {
-  const [fruits, setFruits] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:5000/fruit")
-      .then((res) => res.json())
-      .then((data) => setFruits(data));
-  }, []);
+  const [fruits, setFruits] = HooksProducts();
   return (
     <div className="maincontainer">
       <h1>Top Trend</h1>
@@ -20,10 +18,19 @@ const Load6products = () => {
               <h3>Name:{fruit.fruitname}</h3>
               <h4>Price:{fruit.price}</h4>
               <p>Quantity:{fruit.quantity}</p>
+              <p>Discription:{fruit.description}</p>
             </div>
-            {/* <button className="btn">Add to Cart</button> */}
+            <button className="btn">Update Stock</button>
           </div>
         ))}
+      </div>
+      <div className="button">
+        <Link to="/products">
+          {" "}
+          <button className="manage-inventorybutton">
+            Manage Inventory <FiZap></FiZap>{" "}
+          </button>
+        </Link>
       </div>
     </div>
   );

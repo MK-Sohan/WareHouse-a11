@@ -1,0 +1,58 @@
+.single-container img {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+
+  border-radius: 8px;
+}
+
+.single-container {
+  width: 400px;
+  height: 640px;
+  box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border-radius: 7px;
+}
+.allproduct-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 90px;
+  grid-row-gap: 60px;
+  margin-left: 270px;
+  margin-top: 80px;
+  height: 160vh;
+  width: 70%;
+}
+.allproduct-maincontainer {
+  margin-top: 60px;
+  height: 600vh;
+  width: 100%;
+}
+.allproduct-maincontainer > h1 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 70px;
+  text-align: center;
+}
+
+.allproduct-maincontainer > p {
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  text-align: center;
+}
+.singleproduct-info {
+  margin-left: 20px;
+}
+.singleproduct-info > p {
+  font-size: 15px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
