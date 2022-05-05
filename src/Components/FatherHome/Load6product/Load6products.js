@@ -20,7 +20,10 @@ const Load6products = () => {
               <p>Quantity:{fruit.quantity}</p>
               <p>Discription:{fruit.description}</p>
             </div>
-            <button className="btn">Update Stock</button>
+            <Link to="/updatestock">
+              {" "}
+              <button className="btn">Update Stock</button>
+            </Link>
           </div>
         ))}
       </div>

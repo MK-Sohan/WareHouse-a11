@@ -8,7 +8,7 @@ const Reviews = () => {
       .then((data) => setReviews(data));
   }, []);
   return (
-    <div className="main-container">
+    <div className="mainn-container">
       <h1 className="text-center mt-5 ">Testimonials</h1>
       <div
         style={{ height: "1px", width: "290px" }}
