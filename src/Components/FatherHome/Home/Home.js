@@ -1,12 +1,9 @@
 import React from "react";
-import Banner from "../Banner/Banner";
 import Video from "../Videoback/Video";
 
 const Home = () => {
   return (
     <div>
-      {/* <Banner></Banner> */}
-
       <Video></Video>
     </div>
   );

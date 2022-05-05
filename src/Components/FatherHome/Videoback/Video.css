@@ -13,5 +13,48 @@ video {
   width: 100%;
   height: 100%;
   top: 0;
-  margin-top: 200px;
+  margin-top: 380px;
+}
+.content h1 {
+  color: orange;
+  font-size: 70px;
+  margin-left: 40px;
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: orange;
+}
+.content p {
+  color: whitesmoke;
+  font-size: 30px;
+  margin-left: 40px;
+  font-family: "Source Code Pro", monospace;
+}
+
+:root {
+  --primary-orange: orange;
+  --primary-red: rgb(228, 130, 43);
+}
+
+.btn {
+  margin-left: 42px;
+  color: white;
+  padding: 10px 28px;
+  font-size: 19px;
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-red) 0%,
+    var(--primary-orange) 100%
+  );
+
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn button {
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary-orange);
+  color: var(--primary-orange);
 }

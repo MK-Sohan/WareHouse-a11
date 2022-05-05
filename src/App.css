@@ -1,18 +1,11 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body {
+  font-family: "Roboto Mono", monospace;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +29,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* :root {
+  --primary-dark: #5651e5;
+  --primary-light: #709dff;
+}
+
+.btn {
+  @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md;
+} */

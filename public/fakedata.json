@@ -1,0 +1,212 @@
+[
+    {
+      "_id": "6273bd61704de9f71d02eafc",
+      "image": "./products/apple.jpg",
+      "fruitname": "Apple",
+      "price": "$196.91",
+      "quantity": 353,
+      "suppliername": "Nanette Clark",
+      "description": "apple, (Malus domestica), fruit of the domesticated tree Malus domestica (family Rosaceae), one of the most widely cultivated tree fruits. The apple is a pome (fleshy) fruit, in which the ripened ovary and surrounding tissue both become fleshy and edible."
+    },
+    {
+      "_id": "6273bd61731dea832fae71d7",
+      "image": "./products/atarfruit.jpg",
+      "fruitname": "Star Fruit",
+      "price": "$137.85",
+      "quantity": 662,
+      "suppliername": "Corrine Duran",
+      "description": "Star fruit — or carambola — is a sweet and sour fruit that has the shape of a five-point star. The skin is edible and the flesh has a mild, sour flavor that makes it popular in a number of dishes. The star fruit is yellow or green in color. It comes in two main types: a smaller, sour variety and a larger, sweeter one."
+    },
+    {
+      "_id": "6273bd61bd353b6f9aed61e2",
+      "image": "./products/Blueberries.jpg",
+      "fruitname": "Blueberries",
+      "price": "$147.13",
+      "quantity": 273,
+      "suppliername": "Tamera Gibson",
+      "description": "Blueberries are small round berries about 0.2 to 0.6 inches across. Their color can range from blue to purple. They are often eaten fresh but can also be enjoyed frozen, added to a wide variety of baked goods, or juiced or pureed."
+    },
+    {
+      "_id": "6273bd61b18e8134b891a7b7",
+      "image": "./products/Cherry.jpg",
+      "fruitname": "Cherry",
+      "price": "$91.43",
+      "quantity": 416,
+      "suppliername": "Carmen Mcbride",
+      "description": "The fruit is a fleshy drupe (stone fruit) that is generally heart-shaped to nearly globular, about 2 cm (1 inch) in diameter, and varies in colour from yellow through red to nearly black. The acid content of the sweet cherry is low. The higher acid content of the sour cherry produces its characteristic tart flavour."
+    },
+    {
+      "_id": "6273bd615aa48d187aa2fb77",
+      "image": "./products/coco.jpg",
+      "fruitname": "Coconut",
+      "price": "$78.49",
+      "quantity": 369,
+      "suppliername": "Sheena Cabrera",
+      "description": "Coconut is a round and elongate fruit of white, fibrous and oily meat covered by a thick, brown and hairy shell. Coconuts are surrounded by a fibrous kernel, inside which is a white meat called copra. When the fruit is still tender it yields a milky fluid that is commonly used as basic food in some zones."
+    },
+    {
+      "_id": "6273bd61853f90c2a1a9c7fd",
+      "image": "./products/Dates.jpg",
+      "fruitname": "Dates",
+      "price": "$169.71",
+      "quantity": 604,
+      "suppliername": "Alana Fox",
+      "description": "The date is a one-seeded fruit, or drupe, usually oblong but varying much in shape, size, colour, quality, and consistency of flesh, according to the conditions of culture and the variety. More than 1,000 dates may appear on a single bunch weighing 8 kg (18 pounds) or more."
+    },
+    {
+      "_id": "6273bd613cd9d4149d8a8cdb",
+      "image": "./products/Dragon.jpg",
+      "fruitname": "Dragon Fruit",
+      "price": "$70.54",
+      "quantity": 450,
+      "suppliername": "Conley Hyde",
+      "description": "Dragon fruit may look exotic, but its flavors are similar to other fruits. Its taste has been described as a slightly sweet cross between a kiwi and a pear. Dragon fruit is a tropical fruit native to Mexico and Central America. Its taste is like a combination of a kiwi and a pear."
+    },
+    {
+      "_id": "6273bd6132a45371ceb77026",
+      "image": "./products/Grapefruit.jpg",
+      "fruitname": "Grapefruit",
+      "price": "$87.04",
+      "quantity": 232,
+      "suppliername": "Agnes Huber",
+      "description": "The fruit ranges from 100 to 150 mm (4 to 6 inches) in diameter, its size depending upon the variety and upon growing conditions. Its pulp is usually light yellowish, tender, and very full of juice, with a distinctive mildly acid flavour. Several varieties have pink or red pulp."
+    },
+    {
+      "_id": "6273bd611f0160db4efdde7a",
+      "image": "./products/Grapes.jpg",
+      "fruitname": "Grapes",
+      "price": "$158.70",
+      "quantity": 536,
+      "suppliername": "Silva Whitehead",
+      "description": "Grapes are fleshy, rounded fruits that grow in clusters made up of many fruits of greenish, yellowish or purple skin. The pulp is juicy and sweet, and it contain several seeds or pips. It is a well-known fruit; it is eaten raw, although it is mainly used for making wine."
+    },
+    {
+      "_id": "6273bd618ec875ed85aea47f",
+      "image": "./products/Guava.jpg",
+      "fruitname": "Guava",
+      "price": "$122.56",
+      "quantity": 671,
+      "suppliername": "Tia Ware",
+      "description": "The fruits are round to pear-shaped and measure up to 7.6 cm in diameter; their pulp contains many small hard seeds (more abundant in wild forms than in cultivated varieties). The fruit has a yellow skin and white, yellow, or pink flesh. The musky, at times pungent, odour of the sweet pulp is not always appreciated."
+    },
+    {
+      "_id": "6273bd613922f57c0905d693",
+      "image": "./products/jackfruit.jpg",
+      "fruitname": "Jackfruit",
+      "price": "$197.17",
+      "quantity": 467,
+      "suppliername": "Mann Lawrence",
+      "description": "Jackfruit is the largest tree-borne fruit in the world, reaching up to 60 cm (about 2 feet) long and weighing up to 18 kg (about 40 pounds). It is ellipsoidal and aggregate, composed of multiple “bulbs” of seed-containing flesh around a stringy core, all of which is enclosed by a bumpy rind."
+    },
+    {
+      "_id": "6273bd613a9be87a1ddcc35a",
+      "image": "./products/lichi.jpg",
+      "fruitname": " Litchi",
+      "price": "$179.47",
+      "quantity": 336,
+      "suppliername": "Mayo Mayer",
+      "description": "lychee, (Litchi chinensis), also spelled litchi or lichi, evergreen tree of the soapberry family (Sapindaceae), grown for its edible fruit. Lychee is native to Southeast Asia and has been a favourite fruit of the Cantonese since ancient times. The fruit is usually eaten fresh but can also be canned or dried."
+    },
+    {
+      "_id": "6273bd61f85460328fc2b4c1",
+      "image": "./products/mango.jpg",
+      "fruitname": "Mango",
+      "price": "$175.62",
+      "quantity": 214,
+      "suppliername": "Hazel England",
+      "description": "The fruit varies greatly in size and character. Its form is oval, round, heart-shaped, kidney-shaped, or long and slender. The smallest mangoes are no larger than plums, while others may weigh 1.8 to 2.3 kg (4 to 5 pounds). Some varieties are vividly coloured with shades of red and yellow, while others are dull green."
+    },
+    {
+      "_id": "6273bd61526749c0ce31dcc5",
+      "image": "./products/melon.jpg",
+      "fruitname": "Water Melon",
+      "price": "$169.71",
+      "quantity": 634,
+      "suppliername": "Taylor Herrera",
+      "description": "It has an oval or spherical shape and a dark green and smooth rind, sometimes showing irregular areas of a pale green colour. It has a sweet, juicy, refreshing flesh of yellowish or reddish colour, containing multiple black, brown or white pips."
+    },
+    {
+      "_id": "6273bd61e935df55cfd245d3",
+      "image": "./products/nuts.jpg",
+      "fruitname": "",
+      "price": "$176.64",
+      "quantity": 188,
+      "suppliername": "Cummings Estes",
+      "description": "Nuts are actually fruits. They are defined as dry, single-seeded fruits that have high oil content. They are usually enclosed in a leathery or solid outer layer. In botany terms, nuts are strictly a particular kind of dry fruit that has a single seed, a hard shell, and a protective husk."
+    },
+    {
+      "_id": "6273bd61d7587d687326ab7d",
+      "image": "./products/Olive.jpg",
+      "fruitname": "Olive",
+      "price": "$108.80",
+      "quantity": 580,
+      "suppliername": "Dona Byrd",
+      "description": "olive, (Olea europaea), subtropical broad-leaved evergreen tree (family Oleaceae) and its edible fruit. The olive fruit and its oil are key elements in the cuisine of the Mediterranean and are popular outside the region. The tree's beauty has been extolled for thousands of years."
+    },
+    {
+      "_id": "6273bd61d42c5601939d8643",
+      "image": "./products/Orange.jpg",
+      "fruitname": "Orange",
+      "price": "$188.44",
+      "quantity": 361,
+      "suppliername": "Candy Chase",
+      "description": "The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit, etc."
+    },
+    {
+      "_id": "6273bd61f697c869a5a583c3",
+      "image": "./products/Papaya..jpg",
+      "fruitname": "Papaya",
+      "price": "$149.27",
+      "quantity": 143,
+      "suppliername": "Odonnell Kent",
+      "description": "Papaya is a tropical fruit, having oval or pear shape, measuring between 10 and 20cm and usually weighing between 500 and 1,000g, although it may even weigh up to 5kg. It is a berry of thin skin, of a green yellowish and orange colour. The pulp is of a red orange or yellow colour, sweet and very juicy."
+    },
+    {
+      "_id": "6273bd6186e32603cf8f1335",
+      "image": "./products/pinapple (1).jpg",
+      "fruitname": "Pinapple",
+      "price": "$181.74",
+      "quantity": 349,
+      "suppliername": "Frances Barber",
+      "description": "A pineapple is a sweet tropical fruit with a tough leathery skin and spiky leaves on top. Pineapple is excellent, whether eaten as a snack, in a sweet dessert, in savory dishes like fried rice, or even on pizza."
+    },
+    {
+      "_id": "6273bd618d748a46d2e00831",
+      "image": "./products/raspberry.jpg",
+      "fruitname": "Raspberry",
+      "price": "$176.32",
+      "quantity": 369,
+      "suppliername": "Vicki Jenkins",
+      "description": "A small, deep colored berry which has a tender texture, a sweet delicate taste and a pleasant aroma. Peak season for raspberries is during the middle of summer, but they are available year-round in some markets as both fresh and frozen. The most common and most cultivated variety is the red Raspberry."
+    },
+   
+    {
+      "_id": "6273bd610b08fc7b8ace745d",
+      "image": "http://placehold.it/32x32",
+      "fruitname": "",
+      "price": "$191.87",
+      "quantity": 408,
+      "suppliername": "Gertrude Meyer",
+      "description": ""
+    },
+    {
+      "_id": "6273bd6116f1948e3ed38bd3",
+      "image": "http://placehold.it/32x32",
+      "fruitname": "",
+      "price": "$75.93",
+      "quantity": 208,
+      "suppliername": "Clay Wall",
+      "description": ""
+    },
+    {
+      "_id": "6273bd61093700cfc9cd4b0a",
+      "image": "http://placehold.it/32x32",
+      "fruitname": "",
+      "price": "$78.90",
+      "quantity": 401,
+      "suppliername": "Heidi Goff",
+      "description": ""
+    }
+    
+
+  ]
