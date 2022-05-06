@@ -3,6 +3,8 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import HooksProducts from "../Hooks/HooksProducts";
 import "./Allproducts.css";
 import { FaArrowCircleDown } from "react-icons/fa";
+import { AiTwotoneDelete } from "react-icons/ai";
+import { GrUpdate } from "react-icons/gr";
 const Allproducts = () => {
   const { productid } = useParams();
   console.log(productid);
@@ -34,8 +36,8 @@ const Allproducts = () => {
           <div className="single-container">
             <img src={fruit.image} alt="" />
             <div className="singleproduct-info">
-              <h3>Name:{fruit.fruitname}</h3>
-              <h4>Price:{fruit.price}</h4>
+              <h4 className="text-center">{fruit.fruitname}</h4>
+              <h5 className="text-center text-success">Price:{fruit.price}</h5>
               <p>Stock:{fruit.quantity}</p>
               <p>Suppliername:{fruit.suppliername}</p>
               <p>Description:{fruit.description}</p>
@@ -43,11 +45,13 @@ const Allproducts = () => {
 
             <button
               onClick={() => navigatetoupdatestock(fruit._id)}
-              className="btnn"
+              className="btnn-1"
             >
-              Stock Update
+              Stock Update <GrUpdate></GrUpdate>
             </button>
-            <button className="btn mx-5 btn-danger">Delete</button>
+            <button className=" delet  mx-50 ">
+              Delete <AiTwotoneDelete></AiTwotoneDelete>
+            </button>
           </div>
         ))}
       </div>
