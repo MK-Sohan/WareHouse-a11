@@ -32,7 +32,7 @@
 
 .allproduct-maincontainer {
   /* margin-top: 60px; */
-  height: 600vh;
+  height: 1200vh;
   width: 100%;
   background-color: gray;
 }
@@ -63,7 +63,7 @@
 }
 
 .btnn {
-  margin-left: 42px;
+  margin-left: 20px;
   color: white;
   padding: 10px 28px;
   font-size: 19px;

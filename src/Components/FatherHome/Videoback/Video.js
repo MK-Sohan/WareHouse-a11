@@ -12,7 +12,7 @@ const Video = () => {
         <p>Fresh New Pack Brushting Fruit</p>
         <Link to="/products">
           {" "}
-          <button className="btn">Get Started</button>
+          <button className="btnn">Get Started</button>
         </Link>
       </div>
     </div>

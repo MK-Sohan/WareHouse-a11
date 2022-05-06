@@ -80,3 +80,29 @@
   justify-content: center;
   /* align-items: center; */
 }
+
+@media only screen and (max-width: 644px) {
+  .Product-container {
+    width: 330px;
+    height: 725px;
+
+    box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 7px;
+  }
+  .sixproduct-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 40px;
+    margin-left: 15px;
+    margin-top: 80px;
+  }
+  .maincontainer {
+    height: 5000px;
+  }
+  .manage-inventorybutton {
+    margin-top: 3450px;
+  }
+}

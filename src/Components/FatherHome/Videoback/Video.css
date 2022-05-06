@@ -13,7 +13,7 @@ video {
   width: 100%;
   height: 100%;
   top: 0;
-  margin-top: 380px;
+  margin-top: 350px;
 }
 .content h1 {
   color: orange;
@@ -34,7 +34,7 @@ video {
   --primary-red: rgb(228, 130, 43);
 }
 
-.btn {
+.btnn {
   margin-left: 42px;
   color: white;
   padding: 10px 28px;
@@ -48,6 +48,7 @@ video {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 
 .btn button {

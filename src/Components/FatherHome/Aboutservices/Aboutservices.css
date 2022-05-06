@@ -43,3 +43,17 @@
   margin-right: 50px;
   text-align: center;
 }
+@media only screen and (max-width: 644px) {
+  .aboutservice-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    border-radius: 8px;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid rgb(201, 198, 198);
+  }
+}
