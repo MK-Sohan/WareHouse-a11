@@ -19,6 +19,23 @@ const Allproducts = () => {
   const navigatetoaddProduct = () => {
     navigate("/addproduct");
   };
+
+  const handleDeletitem = (id) => {
+    const confirm = window.confirm("Are You Shure?");
+    if (confirm) {
+      const url = `http://localhost:5000/inventory/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          const remaining = fruits.filter((fruit) => fruit._id !== id);
+          setFruits(remaining);
+          console.log(data);
+        });
+    }
+  };
+
   return (
     <div className="allproduct-maincontainer">
       <h1 className="text-warning">Top Trend</h1>
@@ -49,7 +66,10 @@ const Allproducts = () => {
             >
               Stock Update <GrUpdate></GrUpdate>
             </button>
-            <button className=" delet  mx-50 ">
+            <button
+              onClick={() => handleDeletitem(fruit._id)}
+              className=" delet  mx-50  "
+            >
               Delete <AiTwotoneDelete></AiTwotoneDelete>
             </button>
           </div>

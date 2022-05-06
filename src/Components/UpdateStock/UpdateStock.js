@@ -14,8 +14,8 @@ const UpdateStock = () => {
   }, []);
   console.log(fruitdetail.image);
   return (
-    <div className="maindetail-container">
-      <div className="detail-container">
+    <div className="maindetaill-container ">
+      <div className="detaill-container">
         <div className="detail-image">
           <img src={fruitdetail.image} alt="" />
         </div>
@@ -26,19 +26,11 @@ const UpdateStock = () => {
           </h5>
           <p>Stock:{fruitdetail.quantity}</p>
           <p>Suppliername:{fruitdetail.suppliername}</p>
-          <p>Description:{fruitdetail.description}</p>
+          <p className="text-center ">Description:{fruitdetail.description}</p>
         </div>
+        <button className="btnn-1">Deliver</button>
+        <button className=" delet  mx-50 ">Add Quantity</button>
       </div>
-
-      {/* <button
-      onClick={() => navigatetoupdatestock(fruit._id)}
-      className="btnn-1"
-    >
-      Stock Update <GrUpdate></GrUpdate>
-    </button>
-    <button className=" delet  mx-50 ">
-      Delete <AiTwotoneDelete></AiTwotoneDelete>
-    </button> */}
     </div>
   );
 };

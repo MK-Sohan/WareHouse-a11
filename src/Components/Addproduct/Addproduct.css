@@ -1,0 +1,32 @@
+.addproductmain-container {
+  height: 100vh;
+
+  width: 100%;
+  background-image: url(../../images/banner/banner-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.forminput {
+  height: 60px;
+  width: 500px;
+  border: 2px solid orange;
+}
+.formcontainer {
+  margin-left: 650px;
+  background-color: rgba(128, 128, 128, 0.679);
+  width: 600px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.addsubmit-button {
+  width: 100%;
+  background-color: royalblue;
+  border: none;
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+}
