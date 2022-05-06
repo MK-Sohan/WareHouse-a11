@@ -11,7 +11,8 @@
 
 .single-container {
   width: 400px;
-  height: 640px;
+
+  height: 100%;
   box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
@@ -28,10 +29,12 @@
   height: 160vh;
   width: 70%;
 }
+
 .allproduct-maincontainer {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   height: 600vh;
   width: 100%;
+  background-color: gray;
 }
 .allproduct-maincontainer > h1 {
   font-family: "Oleo Script Swash Caps", cursive;
@@ -41,7 +44,7 @@
 
 .allproduct-maincontainer > p {
   font-family: "Source Code Pro", monospace;
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
 }
 .singleproduct-info {
@@ -50,7 +53,29 @@
 .singleproduct-info > p {
   font-size: 15px;
 }
+.btnn:hover {
+  background-color: royalblue;
+}
 
+:root {
+  --primary-orange: orange;
+  --primary-red: rgb(228, 130, 43);
+}
+
+.btnn {
+  margin-left: 42px;
+  color: white;
+  padding: 10px 28px;
+  font-size: 19px;
+  background-color: orange;
+
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btnn:hover {
+  background-color: rgb(109, 138, 225);
+}
 .button {
   display: flex;
   justify-content: center;

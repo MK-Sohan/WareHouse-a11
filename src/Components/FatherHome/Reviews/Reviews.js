@@ -9,7 +9,9 @@ const Reviews = () => {
   }, []);
   return (
     <div className="mainn-container">
-      <h1 className="text-center mt-5 ">Testimonials</h1>
+      <h1 className="text-center mt-5 ">
+        What People Say <br /> <span className="text-warning">About Us</span>{" "}
+      </h1>
       <div
         style={{ height: "1px", width: "290px" }}
         className="bg-primary mx-auto mb-5"

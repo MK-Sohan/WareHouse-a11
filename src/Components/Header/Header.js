@@ -40,22 +40,28 @@ const Header = () => {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
+              {user && (
+                <>
+                  <Nav.Link eventKey={2}>Dank memes</Nav.Link>
+                  <Nav.Link href="#deets">another</Nav.Link>
+                </>
+              )}
+
               <Nav.Link eventKey={2} as={Link} to="/login">
                 {user ? (
-                  <button onClick={logout} className="btn btn-danger">
+                  <button onClick={logout} className="logout-button">
                     Log out
                   </button>
                 ) : (
                   <Nav.Link
                     as={Link}
                     to="/login"
+                    className="ms-5"
                     eventKey={2}
                     href="#memes"
-                  ></Nav.Link>
+                  >
+                    <button className="login-button">Log in</button>
+                  </Nav.Link>
                 )}
               </Nav.Link>
             </Nav>

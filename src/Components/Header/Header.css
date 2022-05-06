@@ -6,3 +6,22 @@
   color: orange;
   font-size: 39px;
 }
+.logout-button {
+  background-color: red;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  padding: 5px 5px;
+  margin-left: 30px;
+}
+.login-button {
+  background-color: orange;
+  border: none;
+  border-radius: 8px;
+  color: rgb(45, 40, 40);
+  font-size: 18px;
+  padding: 5px 5px;
+  margin-left: 30px;
+  font-weight: 700;
+}

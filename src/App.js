@@ -28,8 +28,12 @@ function App() {
         ></Route>
         <Route path="*" element={<FourOfour></FourOfour>}></Route>
         <Route
-          path="/updatestock"
-          element={<UpdateStock></UpdateStock>}
+          path="/updatestock/:productid"
+          element={
+            <Requireauth>
+              <UpdateStock></UpdateStock>
+            </Requireauth>
+          }
         ></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>

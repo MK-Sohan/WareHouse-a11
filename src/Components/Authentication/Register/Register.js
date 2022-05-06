@@ -55,71 +55,73 @@ const Register = () => {
   }
 
   return (
-    <div className="main-container">
-      <form onSubmit={handleFormsubmit}>
-        <div className="login-container">
-          <div className="login-tittle ">
-            <h1 className="text-center ">Register</h1> <br />
-          </div>
-          <div className="login-inputs">
-            <input
-              required
-              ref={nameref}
-              type="name"
-              name="name"
-              id=""
-              placeholder="Enter Your Name"
-            />{" "}
-            <br />
-            <input
-              ref={emailref}
-              type="email"
-              name="email"
-              required
-              id="regemail"
-              placeholder="Enter Your Email"
-            />{" "}
-            <br />
-            <input
-              ref={passwordref}
-              type="password"
-              name="password"
-              required
-              id="regpass"
-              placeholder="Enter Your Password"
-            />{" "}
-            <br />
-            {errorelement}
-            <p className="text-center mt-4">
-              Already Have an Account? <Link to="/login"> Log in</Link>
-            </p>
-            <button className="register-button">Register</button>
-            <div className="design">
-              <div className="d-flex  align-items-center">
-                <div
-                  style={{ height: "1px", width: "290px" }}
-                  className="bg-primary "
-                >
-                  {" "}
+    <div className="registerfull-container">
+      <div className="main-container">
+        <form onSubmit={handleFormsubmit}>
+          <div className="login-container">
+            <div className="login-tittle ">
+              <h1 className="text-center text-white ">Register</h1> <br />
+            </div>
+            <div className="login-inputs">
+              <input
+                required
+                ref={nameref}
+                type="name"
+                name="name"
+                id=""
+                placeholder="Enter Your Name"
+              />{" "}
+              <br />
+              <input
+                ref={emailref}
+                type="email"
+                name="email"
+                required
+                id="regemail"
+                placeholder="Enter Your Email"
+              />{" "}
+              <br />
+              <input
+                ref={passwordref}
+                type="password"
+                name="password"
+                required
+                id="regpass"
+                placeholder="Enter Your Password"
+              />{" "}
+              <br />
+              {errorelement}
+              <p className=" text-white text-center mt-4">
+                Already Have an Account? <Link to="/login"> Log in</Link>
+              </p>
+              <button className="register-button">Register</button>
+              <div className="design">
+                <div className="d-flex  align-items-center">
+                  <div
+                    style={{ height: "1px", width: "290px" }}
+                    className="bg-primary "
+                  >
+                    {" "}
+                  </div>
+                  <p className="mt-2 px-2">or</p>
+                  <div
+                    style={{ height: "1px", width: "290px" }}
+                    className="bg-primary "
+                  ></div>
                 </div>
-                <p className="mt-2 px-2">or</p>
-                <div
-                  style={{ height: "1px", width: "290px" }}
-                  className="bg-primary "
-                ></div>
               </div>
             </div>
           </div>
-        </div>
-      </form>
-      <button
-        onClick={handlesigninwithGoogle}
-        className="signinwithgoogle-button"
-      >
-        <img src={google} alt="" />
-        Sign in With google
-      </button>
-      <ToastContainer />
+        </form>
+        <button
+          onClick={handlesigninwithGoogle}
+          className="signinwithgoogle-button"
+        >
+          <img src={google} alt="" />
+          Sign in With google
+        </button>
+        <ToastContainer />
+      </div>
     </div>
   );
 };

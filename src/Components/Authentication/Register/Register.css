@@ -3,7 +3,12 @@
   color: rgb(65, 170, 65);
   border: 1px solid rgb(65, 170, 65);
 }
-
+.registerfull-container {
+  background-image: url(../../../images/login.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .register-button {
   width: 500px;
   margin-left: 100px;

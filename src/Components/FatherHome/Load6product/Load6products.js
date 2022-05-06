@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Allproducts from "../../Allproducts/Allproducts";
 import { FiZap } from "react-icons/fi";
 import "./Load6product.css";
 import HooksProducts from "../../Hooks/HooksProducts";
 const Load6products = () => {
   const [fruits, setFruits] = HooksProducts();
+  const navigate = useNavigate();
   return (
     <div className="maincontainer">
       <h1>Top Trend</h1>
@@ -18,12 +19,15 @@ const Load6products = () => {
               <h3>Name:{fruit.fruitname}</h3>
               <h4>Price:{fruit.price}</h4>
               <p>Quantity:{fruit.quantity}</p>
+              <p>Suppliername:{fruit.suppliername}</p>
               <p>Discription:{fruit.description}</p>
             </div>
-            <Link to="/updatestock">
-              {" "}
-              <button className="btn">Update Stock</button>
-            </Link>
+            <button
+              onClick={() => navigate(`/updatestock/${fruit._id}`)}
+              className="btnn"
+            >
+              Stock Update
+            </button>
           </div>
         ))}
       </div>
