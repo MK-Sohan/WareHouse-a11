@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto Mono";
 }
-/* .home-container {
-  background-color: black;
-} */
+.home-container {
+  background-color: rgb(255, 255, 255);
+}

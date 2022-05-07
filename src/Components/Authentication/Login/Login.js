@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Login.css";
 import {
+  useAuthState,
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
@@ -10,7 +11,12 @@ import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../firebase.init";
 import googleicon from "../../../images/google.png";
 import Loading from "../../Loading/Loading";
+
 const Login = () => {
+  let location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+  // const [user1, loading1, error1] = useAuthState(auth);
+  // console.log(user1.email);
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
   const [signInWithGoogle, googleuser, googleloading, googleerror] =
     useSignInWithGoogle(auth);
@@ -19,21 +25,47 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
-  const handleloginForm = (e) => {
+  const handleloginForm = async (e) => {
     const email = emailref.current.value;
     const password = passwordref.current.value;
 
     e.preventDefault();
-    signInWithEmailAndPassword(email, password);
+    await signInWithEmailAndPassword(email, password);
+    fetch("http://localhost:5000/login", {
+      method: "POST",
+      body: JSON.stringify({
+        email: email,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        localStorage.setItem("token", data.accesstoken);
+        navigate(from, { replace: true });
+      });
   };
-  let location = useLocation();
-  let from = location.state?.from?.pathname || "/";
 
-  useEffect(() => {
-    if (user || googleuser) {
-      navigate(from, { replace: true });
-    }
-  }, [user, googleuser]);
+  // useEffect(() => {
+  //   if (user || googleuser) {
+  //     const url = "";
+
+  //     fetch(url, {
+  //       method: "POST",
+  //       body: JSON.stringify({
+  //         email: user.email,
+  //       }),
+  //       headers: {
+  //         "Content-type": "application/json; charset=UTF-8",
+  //       },
+  //     })
+  //       .then((response) => response.json())
+  //       .then((json) => console.log(json));
+
+  //     navigate(from, { replace: true });
+  //   }
+  // }, [user, googleuser]);
 
   let errorelement;
   if (error) {
