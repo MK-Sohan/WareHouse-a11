@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const HooksProducts = () => {
   const [fruits, setFruits] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/inventory")
+    fetch("https://fathomless-forest-20620.herokuapp.com/inventory")
       .then((res) => res.json())
       .then((data) => setFruits(data));
   }, []);

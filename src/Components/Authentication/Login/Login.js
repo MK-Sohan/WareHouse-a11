@@ -11,11 +11,10 @@ import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../firebase.init";
 import googleicon from "../../../images/google.png";
 import Loading from "../../Loading/Loading";
+import useJwtToken from "../../Usejwttoken/Usejwttoken";
 
 const Login = () => {
-  let location = useLocation();
-  let from = location.state?.from?.pathname || "/";
-  // const [user1, loading1, error1] = useAuthState(auth);
+  const [user1, loading1, error1] = useAuthState(auth);
   // console.log(user1.email);
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
   const [signInWithGoogle, googleuser, googleloading, googleerror] =
@@ -25,47 +24,24 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
+
+  const [token] = useJwtToken(user1);
+  if (token) {
+    navigate(from, { replace: true });
+  }
+  if (user1) {
+    navigate(from, { replace: true });
+  }
+
   const handleloginForm = async (e) => {
     const email = emailref.current.value;
     const password = passwordref.current.value;
 
     e.preventDefault();
     await signInWithEmailAndPassword(email, password);
-    fetch("http://localhost:5000/login", {
-      method: "POST",
-      body: JSON.stringify({
-        email: email,
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        localStorage.setItem("token", data.accesstoken);
-        navigate(from, { replace: true });
-      });
   };
-
-  // useEffect(() => {
-  //   if (user || googleuser) {
-  //     const url = "";
-
-  //     fetch(url, {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         email: user.email,
-  //       }),
-  //       headers: {
-  //         "Content-type": "application/json; charset=UTF-8",
-  //       },
-  //     })
-  //       .then((response) => response.json())
-  //       .then((json) => console.log(json));
-
-  //     navigate(from, { replace: true });
-  //   }
-  // }, [user, googleuser]);
 
   let errorelement;
   if (error) {
@@ -89,6 +65,9 @@ const Login = () => {
   const handlesigninwithGoogle = (e) => {
     e.preventDefault();
     signInWithGoogle();
+    if (user1) {
+      navigate(from, { replace: true });
+    }
   };
   if (loading || sending || googleloading) {
     return <Loading></Loading>;

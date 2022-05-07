@@ -8,7 +8,7 @@ const UpdateStock = () => {
   const [fruitdetail, setFruitdetail] = useState({});
 
   useEffect(() => {
-    const url = `http://localhost:5000/inventory/${productid}`;
+    const url = `https://fathomless-forest-20620.herokuapp.com/inventory/${productid}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setFruitdetail(data));
@@ -22,7 +22,7 @@ const UpdateStock = () => {
     } else {
       const newQuantity = parseInt(fruitdetail.quantity) + parseInt(quantity);
       const newQuantityObj = { newQuantity };
-      const url = `http://localhost:5000/inventory/${productid}`;
+      const url = `https://fathomless-forest-20620.herokuapp.com/inventory/${productid}`;
       fetch(url, {
         method: "PUT",
         headers: {
@@ -45,7 +45,7 @@ const UpdateStock = () => {
     console.log(id);
     if (quantity > 0) {
       const quantityObj = { quantity };
-      const url = ` http://localhost:5000/deliver/${id}`;
+      const url = ` https://fathomless-forest-20620.herokuapp.com/deliver/${id}`;
       fetch(url, {
         method: "PUT",
         headers: {

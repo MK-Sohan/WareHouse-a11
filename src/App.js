@@ -11,6 +11,7 @@ import Blogs from "./Components/Blogs/Blogs";
 import Home from "./Components/FatherHome/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
+import MyItems from "./Components/Myitems/MyItems";
 import Requireauth from "./Components/Requireauth/Requireauth";
 import UpdateStock from "./Components/UpdateStock/UpdateStock";
 
@@ -48,6 +49,7 @@ function App() {
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route path="/myitem" element={<MyItems></MyItems>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>

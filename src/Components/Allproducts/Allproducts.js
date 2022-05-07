@@ -24,7 +24,7 @@ const Allproducts = () => {
   const handleDeletitem = (id) => {
     const confirm = window.confirm("Are You Shure?");
     if (confirm) {
-      const url = `http://localhost:5000/inventory/${id}`;
+      const url = `https://fathomless-forest-20620.herokuapp.com/inventory/${id}`;
       fetch(url, {
         method: "DELETE",
       })

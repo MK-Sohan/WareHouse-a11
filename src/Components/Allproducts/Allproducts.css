@@ -26,16 +26,18 @@
   grid-row-gap: 60px;
   margin-left: 270px;
   margin-top: 80px;
-  /* height: 160vh; */
+
   width: 70%;
 }
-body {
+/* body {
   background-color: gray !important;
-}
+} */
 .allproduct-maincontainer {
   /* margin-top: 60px; */
   /* height: 650vh; */
-  margin-bottom: 100px;
+  /* background-color: gray !important; */
+
+  /* margin-bottom: 10px; */
   width: 100%;
 }
 .allproduct-maincontainer > h1 {

@@ -1,11 +1,13 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
+import auth from "../../firebase.init";
 import "./Addproduct.css";
 const Addproduct = () => {
   const { register, handleSubmit } = useForm();
+  const [user] = useAuthState(auth);
   const onSubmit = (data) => {
-    console.log(data);
-    const url = `http://localhost:5000/inventory`;
+    const url = `https://fathomless-forest-20620.herokuapp.com/inventory`;
     fetch(url, {
       method: "POST",
       headers: {
@@ -35,6 +37,12 @@ const Addproduct = () => {
             placeholder="Fruit Name"
             className="mb-3 forminput"
             {...register("fruitname", { required: true, maxLength: 20 })}
+          />
+          <input
+            placeholder="Fruit Name"
+            className="mb-3 forminput"
+            value={user?.email}
+            {...register("email")}
           />
 
           <input
