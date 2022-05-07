@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 590px;
 
   border-radius: 8px;
 }
@@ -10,12 +11,20 @@
   margin: 0 auto;
 }
 .maindetaill-container {
-  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+
+  background: gray;
+  background-image: url(../../images/banner/inventory-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .detaill-container {
   width: 700px;
-  height: 900px;
-  margin: 0 auto;
+  height: 1000px;
+  background-color: whitesmoke;
+  margin: 50px auto;
   box-shadow: -1px 2px 29px -6px rgba(54, 49, 49, 0.68);
   -webkit-box-shadow: -1px 2px 29px -6px rgba(54, 49, 49, 0.68);
   -moz-box-shadow: -1px 2px 29px -6px rgba(54, 49, 49, 0.68);
@@ -29,7 +38,18 @@
   background-color: royalblue;
 }
 
-.btnn {
+.btnn-1 {
+  margin-left: 20px;
+  color: white;
+  padding: 10px 28px;
+  font-size: 19px;
+  background-color: rgb(221, 38, 25);
+
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btnn-2 {
   margin-left: 20px;
   color: white;
   padding: 10px 28px;
@@ -40,11 +60,9 @@
   border-radius: 50px;
   cursor: pointer;
 }
+.btnn-2:hover {
+  background-color: rgb(226, 129, 94);
+}
 .btnn:hover {
   background-color: rgb(109, 138, 225);
-}
-.button {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
 }

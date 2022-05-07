@@ -24,7 +24,7 @@ const Load6products = () => {
             </div>
             <button
               onClick={() => navigate(`/updatestock/${fruit._id}`)}
-              className="btnn"
+              className="btn btn-success mx-5"
             >
               Stock Update
             </button>

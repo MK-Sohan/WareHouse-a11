@@ -5,6 +5,7 @@ import "./Allproducts.css";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { AiTwotoneDelete } from "react-icons/ai";
 import { GrUpdate } from "react-icons/gr";
+import Addproduct from "../Addproduct/Addproduct";
 const Allproducts = () => {
   const { productid } = useParams();
   console.log(productid);
@@ -40,11 +41,11 @@ const Allproducts = () => {
     <div className="allproduct-maincontainer">
       <h1 className="text-warning">Top Trend</h1>
 
-      <div className="addproduct-button text-center">
+      <div className="  addproduct-button text-center">
         <h1>
           WANNA ADD A PRODUCT <br /> <FaArrowCircleDown></FaArrowCircleDown>
         </h1>
-        <button onClick={navigatetoaddProduct} className="btn btn-primary ">
+        <button onClick={navigatetoaddProduct} className=" btn btn-primary ">
           Add Product
         </button>
       </div>
@@ -62,13 +63,13 @@ const Allproducts = () => {
 
             <button
               onClick={() => navigatetoupdatestock(fruit._id)}
-              className="btnn-1"
+              className="ms-5 mb-4 btn btn-success"
             >
               Stock Update <GrUpdate></GrUpdate>
             </button>
             <button
               onClick={() => handleDeletitem(fruit._id)}
-              className=" delet  mx-50  "
+              className=" mb-4 btn btn-danger ms-5  mx-50  "
             >
               Delete <AiTwotoneDelete></AiTwotoneDelete>
             </button>
