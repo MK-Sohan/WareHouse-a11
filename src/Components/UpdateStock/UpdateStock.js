@@ -34,7 +34,7 @@ const UpdateStock = () => {
           <p className="text-center ">Description:{fruitdetail.description}</p>
         </div>
         <button className="btnn-1">Deliver</button>
-        <div className="updatestock-form d-flex justify-content-center align-items-center">
+        <div className="updatestock-form  d-flex justify-content-center ">
           <form onSubmit={stockUpdate}>
             <input type="number" name="stock" id="" /> <br />
             <button className="btn btn-primary mt-3 ms-4  mx-50 ">

@@ -43,7 +43,6 @@ const Register = () => {
     const password = passwordref.current.value;
     console.log(name, email, password);
     createUserWithEmailAndPassword(email, password);
-    toast("email send");
   };
 
   const handlesigninwithGoogle = (e) => {

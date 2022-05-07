@@ -1,13 +1,20 @@
 .aboutservice-container img {
   height: 70px;
 }
+
+.servicemain-container {
+  background-image: url(../../../images/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .aboutservice-container {
   display: flex;
-  border: 1px solid rgb(201, 198, 198);
+  /* border: 1px solid rgb(201, 198, 198); */
   justify-content: center;
   border-radius: 8px;
   align-items: center;
-  height: 160px;
+  height: 590px;
   width: 60%;
   margin: 0 auto;
 }
@@ -44,16 +51,26 @@
   text-align: center;
 }
 @media only screen and (max-width: 644px) {
+  .aboutservice-container img {
+    height: 40px;
+  }
+  .servicemain-container {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   .aboutservice-container {
     display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
     flex-wrap: wrap;
 
     justify-content: center;
     border-radius: 8px;
     align-items: center;
     height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid rgb(201, 198, 198);
+    width: 90%;
+    /* margin-bottom: 100px; */
+    margin: 0 20px;
   }
 }

@@ -6,6 +6,7 @@ import Addproduct from "./Components/Addproduct/Addproduct";
 import Allproducts from "./Components/Allproducts/Allproducts";
 import Login from "./Components/Authentication/Login/Login";
 import Register from "./Components/Authentication/Register/Register";
+import Blogs from "./Components/Blogs/Blogs";
 
 import Home from "./Components/FatherHome/Home/Home";
 import Footer from "./Components/Footer/Footer";
@@ -36,9 +37,17 @@ function App() {
             </Requireauth>
           }
         ></Route>
-        <Route path="/addproduct" element={<Addproduct></Addproduct>}></Route>
+        <Route
+          path="/addproduct"
+          element={
+            <Requireauth>
+              <Addproduct></Addproduct>
+            </Requireauth>
+          }
+        ></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>

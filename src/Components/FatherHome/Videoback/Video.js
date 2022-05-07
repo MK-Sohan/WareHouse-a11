@@ -10,10 +10,8 @@ const Video = () => {
         <p>100% Natural </p>
         <h1>Organic Fruits</h1>
         <p>Fresh New Pack Brushting Fruit</p>
-        <Link to="/products">
-          {" "}
-          <button className="btnn">Get Started</button>
-        </Link>
+
+        <button className="btnn">About Us</button>
       </div>
     </div>
   );

@@ -42,8 +42,13 @@ const Header = () => {
             <Nav>
               {user && (
                 <>
-                  <Nav.Link eventKey={2}>Dank memes</Nav.Link>
-                  <Nav.Link href="#deets">another</Nav.Link>
+                  <Nav.Link as={Link} to="/products">
+                    Manage Items
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/addproduct">
+                    Add Item
+                  </Nav.Link>
+                  <Nav.Link>My items</Nav.Link>
                 </>
               )}
 
