@@ -22,23 +22,21 @@ const Addproduct = () => {
     <div className=" addproductmain-container">
       <div className="formcontainer ">
         <div className="tittle">
-          <h1 className="text-center text-white mt-4 mb-5">
-            {" "}
-            Restock the items
-          </h1>
+          <h1 className="text-center text-white mt-4 mb-5"> Add Product</h1>
         </div>
         <form className="d-flex flex-column " onSubmit={handleSubmit(onSubmit)}>
-          {/* <input
+          <input
+            type="text"
             placeholder="Photo Url"
             className="mb-3 forminput"
-            type="url"
-            {...register("image", { required: true, maxLength: 20 })}
-          /> */}
+            {...register("image")}
+          />
           <input
             placeholder="Fruit Name"
             className="mb-3 forminput"
             {...register("fruitname", { required: true, maxLength: 20 })}
           />
+
           <input
             placeholder="Price"
             className="mb-3 forminput"

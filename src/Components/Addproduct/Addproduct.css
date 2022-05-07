@@ -12,7 +12,8 @@
 .forminput {
   height: 60px;
   width: 500px;
-  border: 2px solid orange;
+  border: 2px solid grey;
+  border-radius: 6px;
 }
 .formcontainer {
   margin-left: 650px;
@@ -31,4 +32,39 @@
   color: white;
   font-size: 26px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 644px) {
+  .addproductmain-container {
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+    width: 100%;
+  }
+
+  .formcontainer {
+    margin-left: 1px;
+    /* background-color: rgba(128, 128, 128, 0.679); */
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .forminput {
+    height: 60px;
+    width: 340px;
+    border: 2px solid orange;
+    border-radius: 6px;
+  }
+  .addsubmit-button {
+    width: 100%;
+    background-color: royalblue;
+    border: none;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+  }
 }

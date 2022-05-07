@@ -26,15 +26,17 @@
   grid-row-gap: 60px;
   margin-left: 270px;
   margin-top: 80px;
-  height: 160vh;
+  /* height: 160vh; */
   width: 70%;
 }
-
+body {
+  background-color: gray !important;
+}
 .allproduct-maincontainer {
   /* margin-top: 60px; */
-  height: 600vh;
+  /* height: 650vh; */
+  margin-bottom: 100px;
   width: 100%;
-  background-color: gray;
 }
 .allproduct-maincontainer > h1 {
   font-family: "Oleo Script Swash Caps", cursive;
@@ -91,4 +93,32 @@
   display: flex;
   justify-content: center;
   /* align-items: center; */
+}
+@media only screen and (max-width: 644px) {
+  .allproduct-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 40px;
+    margin-left: 15px;
+    margin-top: 80px;
+    /* height: 1800vh; */
+    width: 70%;
+  }
+  .allproduct-maincontainer {
+    /* margin-top: 60px; */
+    /* height: 15600px; */
+    height: 2100vh;
+    width: 100%;
+    background-color: gray;
+  }
+  .single-container {
+    width: 330px;
+    height: 725px;
+
+    box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -3px 0px 16px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 7px;
+  }
 }

@@ -12,10 +12,56 @@ const UpdateStock = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setFruitdetail(data));
-  }, []);
+  }, [fruitdetail]);
 
-  const stockUpdate = (e) => {
-    e.preventDefault();
+  const stockUpdate = (event) => {
+    event.preventDefault();
+    const quantity = event.target.stock.value;
+    if (!quantity) {
+      alert("input field can't be empty");
+    } else {
+      const newQuantity = parseInt(fruitdetail.quantity) + parseInt(quantity);
+      const newQuantityObj = { newQuantity };
+      const url = `http://localhost:5000/inventory/${productid}`;
+      fetch(url, {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(newQuantityObj),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("success", data);
+
+          //    toast('item restock successfully')
+        });
+      event.target.reset();
+    }
+  };
+
+  const handleDeliver = (id) => {
+    const quantity = fruitdetail.quantity;
+    console.log(id);
+    if (quantity > 0) {
+      const quantityObj = { quantity };
+      const url = ` http://localhost:5000/deliver/${id}`;
+      fetch(url, {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(quantityObj),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("success", data);
+
+          //    toast('item restock successfully')
+        });
+    } else {
+      alert("Stock out");
+    }
   };
 
   return (
@@ -33,7 +79,9 @@ const UpdateStock = () => {
           <p>Suppliername:{fruitdetail.suppliername}</p>
           <p className="text-center ">Description:{fruitdetail.description}</p>
         </div>
-        <button className="btnn-1">Deliver</button>
+        <button onClick={() => handleDeliver(productid)} className="btnn-1">
+          Deliver
+        </button>
         <div className="updatestock-form  d-flex justify-content-center ">
           <form onSubmit={stockUpdate}>
             <input type="number" name="stock" id="" /> <br />

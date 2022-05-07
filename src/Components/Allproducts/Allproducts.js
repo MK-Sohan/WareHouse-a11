@@ -42,10 +42,10 @@ const Allproducts = () => {
       <h1 className="text-warning">Top Trend</h1>
 
       <div className="  addproduct-button text-center">
-        <h1>
-          WANNA ADD A PRODUCT <br /> <FaArrowCircleDown></FaArrowCircleDown>
-        </h1>
-        <button onClick={navigatetoaddProduct} className=" btn btn-primary ">
+        <button
+          onClick={navigatetoaddProduct}
+          className=" mt-5 btn btn-primary "
+        >
           Add Product
         </button>
       </div>
@@ -63,13 +63,13 @@ const Allproducts = () => {
 
             <button
               onClick={() => navigatetoupdatestock(fruit._id)}
-              className="ms-5 mb-4 btn btn-success"
+              className="ms-3 mb-4 btn btn-success"
             >
               Stock Update <GrUpdate></GrUpdate>
             </button>
             <button
               onClick={() => handleDeletitem(fruit._id)}
-              className=" mb-4 btn btn-danger ms-5  mx-50  "
+              className=" mb-4 btn btn-danger ms-3  mx-50  "
             >
               Delete <AiTwotoneDelete></AiTwotoneDelete>
             </button>
