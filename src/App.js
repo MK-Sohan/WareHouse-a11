@@ -49,7 +49,14 @@ function App() {
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
-        <Route path="/myitem" element={<MyItems></MyItems>}></Route>
+        <Route
+          path="/myitem"
+          element={
+            <Requireauth>
+              <MyItems></MyItems>
+            </Requireauth>
+          }
+        ></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>
