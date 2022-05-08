@@ -17,17 +17,17 @@ const MyItems = () => {
   }, [myItems]);
 
   return (
-    <div className="myitems-container">
-      <div className="sixproduct-container">
+    <div className="allproduct-maincontainer">
+      <div className="allproduct-container">
         {myItems?.map((item) => (
-          <div className="Product-container">
+          <div className="single-container">
             <img src={item.image} alt="" />
-            <div className="product-info">
-              <h3>Name:{item.itemname}</h3>
-              <h4>Price:{item.price}</h4>
-              <p>Quantity:{item.quantity}</p>
+            <div className="singleproduct-info">
+              <h4 className="text-center">{item.fruitname}</h4>
+              <h5 className="text-center text-success">Price:{item.price}</h5>
+              <p>Stock:{item.quantity}</p>
               <p>Suppliername:{item.suppliername}</p>
-              <p>Discription:{item.description}</p>
+              <p>Description:{item.description}</p>
             </div>
             <button
               onClick={() => navigate(`/updatestock/${item._id}`)}
