@@ -40,9 +40,9 @@
 }
 @media only screen and (max-width: 644px) {
   .mainn-container {
-    margin-top: 200px;
+    margin-top: 490px;
     height: 290vh;
-    margin: 80px auto;
+    /* margin: 80px auto;  */
   }
   .mainreview-container {
     width: 60%;
