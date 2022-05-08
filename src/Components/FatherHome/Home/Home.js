@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Checkout from "../../Checkout/Checkout";
 import Aboutservices from "../Aboutservices/Aboutservices";
 import Load6products from "../Load6product/Load6products";
 import Reviews from "../Reviews/Reviews";
@@ -11,6 +12,9 @@ const Home = () => {
       <Video></Video>
       <Aboutservices></Aboutservices>
       <Load6products></Load6products>
+
+      <Checkout></Checkout>
+
       <Reviews></Reviews>
     </div>
   );

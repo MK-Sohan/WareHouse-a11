@@ -1,0 +1,107 @@
+:root {
+  --primary: #eebf00;
+}
+
+.checkout-container {
+  /* background-image: url(../../images/rasberry.png); */
+
+  /* background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover; */
+  height: 700px;
+  margin: 30px auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.all-container {
+  background-color: var(--primary);
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.input-1 input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.input-2 input {
+  margin-left: 20px;
+  width: 430px;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+}
+.checkout-title {
+  margin: 60px 0px;
+}
+
+.submit-button {
+  border: none;
+  width: 200px;
+  height: 60px;
+  background-color: rgb(65, 170, 65);
+  color: white;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+.submit-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(65, 170, 65);
+  border: 1px solid rgb(65, 170, 65);
+}
+.checkout-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+@media only screen and (max-width: 644px) {
+  .checkout-container {
+    height: 450px;
+    margin: 10px auto;
+
+    display: flex;
+    justify-content: center;
+  }
+  .all-container {
+    background-color: rgba(27, 22, 22, 0.794);
+
+    margin-left: 0.1px;
+  }
+  .input-1 input {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    margin-right: 10px;
+    padding: 10px;
+  }
+  .input-2 input {
+    width: 300px;
+    height: 50px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .submit-button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(65, 170, 65);
+    color: white;
+    border-radius: 50px;
+    margin-left: 20px;
+  }
+  .submit-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(65, 170, 65);
+    border: 1px solid rgb(65, 170, 65);
+  }
+}

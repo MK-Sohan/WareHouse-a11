@@ -63,13 +63,13 @@ const Allproducts = () => {
 
             <button
               onClick={() => navigatetoupdatestock(fruit._id)}
-              className="ms-3 mb-4 btn btn-success"
+              className="ms-3 mb-4 btnnn btnn-primary1"
             >
-              Stock Update <GrUpdate></GrUpdate>
+              Stock Update
             </button>
             <button
               onClick={() => handleDeletitem(fruit._id)}
-              className=" mb-4 btn btn-danger ms-3  mx-50  "
+              className=" mb-4 btnnn btnn-secondary1 ms-3   "
             >
               Delete <AiTwotoneDelete></AiTwotoneDelete>
             </button>

@@ -29,3 +29,48 @@ body {
     transform: rotate(360deg);
   }
 }
+:root {
+  --primary: #eebf00;
+  --secondary: #232b38;
+  --ternary: #6c6c6c;
+  --danger: #fe4545;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffffff;
+  --footer: #2d333f;
+}
+.btnn {
+  padding: 0.75rem 0.75rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  line-height: 0.8;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.btnn-primary {
+  background: var(--primary);
+  color: var(--heaven);
+}
+.btnn-primary:hover {
+  background: var(--heaven);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.btnn-secondary {
+  background: var(--secondary);
+  color: var(--heaven);
+}
+.btnn-secondary:hover {
+  background: var(--heaven);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}

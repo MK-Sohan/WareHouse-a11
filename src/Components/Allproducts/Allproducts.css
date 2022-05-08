@@ -91,11 +91,7 @@
   border-radius: 50px;
   cursor: pointer;
 }
-.button {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-}
+
 @media only screen and (max-width: 644px) {
   .allproduct-container {
     display: grid;

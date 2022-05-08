@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Allproducts from "../../Allproducts/Allproducts";
+
 import { FiZap } from "react-icons/fi";
 import "./Load6product.css";
 import HooksProducts from "../../Hooks/HooksProducts";
@@ -24,7 +24,7 @@ const Load6products = () => {
             </div>
             <button
               onClick={() => navigate(`/updatestock/${fruit._id}`)}
-              className="btn btn-success mx-5"
+              className="btnnn btnn-primary1 mx-3"
             >
               Stock Update
             </button>

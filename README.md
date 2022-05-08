@@ -1,4 +1,4 @@
-Live Website Link: (https://github.com/facebook/create-react-app).
+Live Website Link: (https://assignment-11-ee9c8.web.app/blogs).
 
 <li>In home page I add a banner,and about special services,show six products,some reviews,a manage inventory button,and a footer</Li>
 <li>In Manage inventory I show all the products available in warehouse.</Li>
